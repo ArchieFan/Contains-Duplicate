@@ -19,6 +19,7 @@
 
     public bool ContainsDuplicate2(int[] nums)
     {
+        // insert the array to Hashset if handset count lesser than arry lenght means contain duplicate
         return new HashSet<int>(nums).Count < nums.Length;
         // return new HashSet<int>(nums).Count != nums.Length;
     }
